@@ -1,0 +1,46 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.logo {
+  will-change: filter;
+  transition: filter 300ms;
+  margin-bottom: 4rem;
+  text-align: center;
+}
+
+.logo:hover {
+  filter: drop-shadow(0 0 1em #ffffff);
+  cursor: pointer;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  gap: .5em;
+  border-bottom: 1px solid rgb(136, 201, 71);
+  padding-bottom: 10px;
+
+}
+
+.navbar a:not(.navbar-selected) {
+  color: rgb(136, 201, 71);
+}
+
+.navbar-selected {
+  border-top: 1px solid;
+  color: rgb(237, 121, 179);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+form input {
+  width: 250px;
+}
